@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/menu_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu1" />
+
+    <TextView
+        android:id="@+id/displayfood_textview"
+        android:layout_width="236dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:textColor="@color/menu_color"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/newmenu_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/montserrat_bold"
+        android:hint="@string/menu_hint"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="@color/menu_color"
+        android:textColorHint="@color/lightGrey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayfood_textview" />
+
+    <Button
+        android:id="@+id/addfood_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="131dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/add_menu"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/clearfood_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newmenu_edittext" />
+
+    <Button
+        android:id="@+id/clearfood_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="131dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/clear_food"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addfood_button"
+        app:layout_constraintTop_toBottomOf="@+id/newmenu_edittext" />
+
+    <Button
+        android:id="@+id/decide_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/decide_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

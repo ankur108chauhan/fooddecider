@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food Decider</string>
+    <string name="menu_text">Menu</string>
+    <string name="menu_hint">Enter New Food </string>
+    <string name="add_menu">Add Food</string>
+    <string name="clear_food">Clear Food</string>
+    <string name="decide_text">Decide</string>
+</resources>
